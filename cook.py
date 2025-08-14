@@ -70,7 +70,7 @@ list(st.session_state.recipes.keys()).index(st.session_state.selected_recipe),
  
 # 選択中の料理名を常に表示 
 if st.session_state.get("selected_recipe"): 
-st.markdown(f"### 選択中の料理: **{st.session_state['selected_recipe']}**") 
-st.markdown("---") 
-st.subheader(st.session_state.selected_recipe) 
-st.text(st.session_state.recipes[st.session_state.selected_recipe])
+    st.markdown(f"### 選択中の料理: **{st.session_state['selected_recipe']}**") 
+    st.markdown("---") 
+    st.subheader(st.session_state.selected_recipe) 
+    st.text(st.session_state.recipes[st.session_state.selected_recipe])
